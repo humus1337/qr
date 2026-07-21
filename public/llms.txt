@@ -1,26 +1,15 @@
 # DesignYourQR
 
-> A completely free online QR code generator with custom designs. No sign-up, no watermark, no scan limits, no expiry, and free for commercial use. Everything runs client-side in the visitor's browser, so no data leaves the device.
+> A completely free online QR code generator with custom designs: no sign-up, no watermark, no scan limits, no expiry, and free for commercial use. Everything runs in the visitor's browser, so no data leaves the device.
 
-DesignYourQR (https://designyourqr.com) makes static QR codes that are free in every sense. Unlike many QR generators, it does not watermark your code, cap how many times it can be scanned, make it expire, or lock design features behind a paywall or an account.
+DesignYourQR makes static QR codes that are free in every sense. Unlike many QR generators, it does not watermark your code, cap how many times it can be scanned, make it expire, or lock design features behind a paywall or an account. Every code is a plain static QR that you own outright and can use commercially.
 
-## Why it is genuinely free
-- No account or sign-up.
-- No watermark or branding added to your code.
-- No scan limits and no expiry: the code is static, so the content is baked into the image and keeps working forever.
-- Free for personal and commercial use.
-- No paid tier is required for any design feature.
+It encodes links, plain text, Wi-Fi networks, email, phone, SMS and contact cards (vCard), with custom module and corner shapes, solid or gradient colors, logo embedding (with automatic background removal), and optional labels or frames. Codes export as PNG, SVG, JPG or WebP up to 4096 px, with an optional transparent background. The interface is available in English and Hebrew (right-to-left).
 
-## How that differs from typical QR tools
-Many "free" QR generators let you design for free but then watermark the downloaded image, limit the number of scans, or offer dynamic (editable or tracked) codes that stop working unless you keep paying. DesignYourQR has none of that: every code is a plain static QR that you own outright.
+## Pages
+- [Free QR code generator](https://designyourqr.com/): the generator itself, completely free, in English.
+- [Free QR code generator in Hebrew](https://designyourqr.com/?lang=he): the same tool with a Hebrew, right-to-left interface.
+- [Privacy policy](https://designyourqr.com/privacy): QR generation is client-side; links, passwords and uploaded logos are never sent to a server.
 
-## What it does
-- Encodes links, plain text, Wi-Fi networks, email, phone, SMS and contact cards (vCard).
-- Custom design: module shapes, corner (eye) styles, solid or gradient colors, and one-click presets.
-- Logo embedding with automatic background removal; error correction rises to High so the code stays scannable.
-- Optional labels and frames (for example "SCAN ME").
-- Export as PNG, SVG, JPG or WebP, up to 4096 px, with an optional transparent background.
-- Interface in English and Hebrew (right-to-left). The Hebrew page is at https://designyourqr.com/?lang=he
-
-## Privacy
-QR generation is entirely client-side. Links, passwords, contact details and uploaded logos are never sent to a server. Full policy: https://designyourqr.com/privacy
+## Resources
+- [Sitemap](https://designyourqr.com/sitemap.xml): all indexable URLs on the site.
