@@ -16,7 +16,6 @@ Fully static, no build step, no backend. Codes are generated client-side; nothin
   - `robots.txt`, `sitemap.xml`, `llms.txt` - search and AI-answer-engine discovery
   - `ads.txt` - AdSense authorization
   - `qr-encoder.js` - vendored [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) 1.4.4 (MIT, Kazuhiko Arase)
-- `worker.js` - tiny Cloudflare Worker: 301s www to the apex, otherwise serves the static assets
 - `serve.mjs` - tiny dev server (`npm run dev`, port 4173)
 - `test/` - see below
 - `wrangler.toml` - Cloudflare Workers static-assets config with the custom domains
@@ -40,7 +39,7 @@ The scan gate: every style combination must decode in zxing-wasm (both tryHarder
 
 ## Deploy
 
-`npm run deploy` (runs `wrangler deploy`). It uploads `public/` to Cloudflare's edge and binds the custom domains from `wrangler.toml`. The `designyourqr.com` zone is on the same Cloudflare account, so DNS and TLS provision automatically. Nothing runs on your machine after that; Cloudflare serves the files globally.
+`npm run deploy` (runs `wrangler deploy`). It uploads `public/` to Cloudflare's edge and binds the `designyourqr.com` custom domain from `wrangler.toml`. The `designyourqr.com` zone is on the same Cloudflare account, so DNS and TLS provision automatically. Nothing runs on your machine after that; Cloudflare serves the files globally.
 
 ## Turning ads on
 
