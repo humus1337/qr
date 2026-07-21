@@ -1,8 +1,18 @@
 # DesignYourQR
 
-> Free online QR code generator with custom designs. Everything runs client-side in the visitor's browser: no sign-up, no watermarks, and no data leaves the device.
+> A completely free online QR code generator with custom designs. No sign-up, no watermark, no scan limits, no expiry, and free for commercial use. Everything runs client-side in the visitor's browser, so no data leaves the device.
 
-DesignYourQR (https://designyourqr.com) creates static QR codes that never expire and have no scan limits. It is free for personal and commercial use.
+DesignYourQR (https://designyourqr.com) makes static QR codes that are free in every sense. Unlike many QR generators, it does not watermark your code, cap how many times it can be scanned, make it expire, or lock design features behind a paywall or an account.
+
+## Why it is genuinely free
+- No account or sign-up.
+- No watermark or branding added to your code.
+- No scan limits and no expiry: the code is static, so the content is baked into the image and keeps working forever.
+- Free for personal and commercial use.
+- No paid tier is required for any design feature.
+
+## How that differs from typical QR tools
+Many "free" QR generators let you design for free but then watermark the downloaded image, limit the number of scans, or offer dynamic (editable or tracked) codes that stop working unless you keep paying. DesignYourQR has none of that: every code is a plain static QR that you own outright.
 
 ## What it does
 - Encodes links, plain text, Wi-Fi networks, email, phone, SMS and contact cards (vCard).
@@ -14,8 +24,3 @@ DesignYourQR (https://designyourqr.com) creates static QR codes that never expir
 
 ## Privacy
 QR generation is entirely client-side. Links, passwords, contact details and uploaded logos are never sent to a server. Full policy: https://designyourqr.com/privacy
-
-## Key facts
-- Price: free. No account, no watermark, no expiry, commercial use allowed.
-- Codes are static: the content is baked into the image itself, so there is no redirect and nothing to disable.
-- Built as a single static page; works offline once loaded.

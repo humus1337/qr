@@ -2,7 +2,7 @@
 window.TitanI18N = {
   en: {
     'doc.title': 'DesignYourQR - Free QR Code Generator with Custom Designs',
-    'doc.desc': 'Create QR codes with custom shapes, gradients, logos and frames. Free, no sign-up, no watermarks. Everything runs in your browser, so your data never leaves your device.',
+    'doc.desc': 'Completely free QR code generator: no sign-up, no watermark, no scan limits, no expiry. Custom shapes, gradients, logos and frames, generated in your browser so your data never leaves your device.',
     'nav.note': 'Free. Private. No sign-up.',
     'nav.lang': 'עברית',
     'nav.theme.light': 'Switch to light mode',
@@ -157,7 +157,7 @@ window.TitanI18N = {
 
     'faq.title': 'Questions and answers',
     'faq.q1': 'Are the QR codes really free?',
-    'faq.a1': 'Yes. Every code made here is a plain static QR code: the content is baked into the image itself, with no server in the middle, no scan limits and no expiry. Commercial use is fine.',
+    'faq.a1': 'Yes, completely free. Every code is a plain static QR code with the content baked into the image: no sign-up, no watermark, no scan limit and no expiry, and commercial use is fine. Many other QR generators watermark free codes, cap scans, or make dynamic codes expire unless you pay. Nothing here is locked behind a paywall.',
     'faq.q2': 'Do the codes expire?',
     'faq.a2': 'No. The code contains the content itself, so it keeps working forever. If you encoded a link, it works for as long as the site it points to exists.',
     'faq.q3': 'Is my data uploaded anywhere?',
@@ -166,6 +166,8 @@ window.TitanI18N = {
     'faq.a4': 'Keep strong contrast between the code and its background, leave a margin, do not oversize the logo, and test with a couple of phones. The scan meter under the preview flags the common problems.',
     'faq.q5': 'Which format should I download?',
     'faq.a5': 'For print, use SVG (sharp at any size) or PNG at 2048 px and up. For social media and websites, a regular PNG is enough.',
+    'faq.q6': 'How is this different from other free QR code generators?',
+    'faq.a6': 'It stays free the whole way through. There is no account, no watermark on your code, no scan limit, and codes never expire, and you can use them commercially. Other tools are often free to design but then watermark the download, cap scans, or charge to keep a dynamic code working. Here the QR code is static and permanently yours.',
 
     'ads.label': 'Advertisement',
     'footer.line1': 'Codes are generated in your browser. Links, passwords and logos never touch a server.',
@@ -175,7 +177,7 @@ window.TitanI18N = {
 
   he: {
     'doc.title': 'DesignYourQR - מחולל קודי QR חינם בעיצוב אישי',
-    'doc.desc': 'יצירת קודי QR עם צורות, מעברי צבע, לוגו ומסגרות. חינם, בלי הרשמה ובלי סימני מים. הכל רץ בדפדפן, כך שהמידע שלכם לא עוזב את המכשיר.',
+    'doc.desc': 'מחולל קודי QR חינמי לגמרי: בלי הרשמה, בלי סימן מים, בלי מגבלת סריקות ובלי תפוגה. צורות, מעברי צבע, לוגו ומסגרות, הכל נוצר בדפדפן כך שהמידע שלכם לא עוזב את המכשיר.',
     'nav.note': 'חינם. פרטי. בלי הרשמה.',
     'nav.lang': 'English',
     'nav.theme.light': 'מעבר למצב בהיר',
@@ -330,7 +332,7 @@ window.TitanI18N = {
 
     'faq.title': 'שאלות ותשובות',
     'faq.q1': 'הקודים באמת חינמיים?',
-    'faq.a1': 'כן. כל קוד שנוצר כאן הוא קוד QR סטטי רגיל: התוכן מוטמע בתמונה עצמה, בלי שרת באמצע, בלי מגבלת סריקות ובלי תפוגה. גם שימוש מסחרי מותר.',
+    'faq.a1': 'כן, לגמרי חינם. כל קוד הוא קוד QR סטטי שהתוכן מוטמע בתמונה: בלי הרשמה, בלי סימן מים, בלי מגבלת סריקות ובלי תפוגה, וגם שימוש מסחרי מותר. הרבה מחוללים אחרים מוסיפים סימן מים לקודים חינמיים, מגבילים סריקות, או גורמים לקודים דינמיים לפוג אם לא משלמים. כאן שום דבר לא נעול מאחורי תשלום.',
     'faq.q2': 'הקודים פגים בשלב כלשהו?',
     'faq.a2': 'לא. הקוד מכיל את התוכן עצמו ולכן ימשיך לעבוד לתמיד. אם קידדתם קישור, הוא יעבוד כל עוד האתר שאליו הוא מפנה קיים.',
     'faq.q3': 'המידע שלי עולה לשרת?',
@@ -339,6 +341,8 @@ window.TitanI18N = {
     'faq.a4': 'שמרו על ניגודיות גבוהה בין הקוד לרקע, השאירו שוליים, אל תגדילו את הלוגו יותר מדי ובדקו עם כמה טלפונים. מד הסריקה שמתחת לתצוגה מסמן את הבעיות הנפוצות.',
     'faq.q5': 'איזה פורמט כדאי להוריד?',
     'faq.a5': 'להדפסה בחרו SVG (חד בכל גודל) או PNG בגודל 2048 ומעלה. לרשתות חברתיות ולאתרים מספיק PNG רגיל.',
+    'faq.q6': 'במה זה שונה ממחוללי QR חינמיים אחרים?',
+    'faq.a6': 'זה נשאר חינם לכל אורך הדרך. אין חשבון, אין סימן מים על הקוד, אין מגבלת סריקות והקודים לא פגים, ומותר להשתמש בהם מסחרית. כלים אחרים לרוב חינמיים לעיצוב אבל מוסיפים סימן מים להורדה, מגבילים סריקות, או גובים תשלום כדי לשמור קוד דינמי פעיל. כאן הקוד סטטי ושלכם לתמיד.',
 
     'ads.label': 'פרסומת',
     'footer.line1': 'הקודים נוצרים בדפדפן שלכם. קישורים, סיסמאות ולוגו לא מגיעים לשום שרת.',
