@@ -1,0 +1,23 @@
+{
+  "name": "designyourqr",
+  "version": "1.0.0",
+  "description": "DesignYourQR - free QR code generator with custom designs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "node serve.mjs",
+    "test": "node test/roundtrip.mjs && node test/styles.mjs",
+    "test:e2e": "node test/e2e.mjs",
+    "assets": "node test/og.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^25.3.0",
+    "zxing-wasm": "^3.1.2"
+  },
+  "private": true
+}

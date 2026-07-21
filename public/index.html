@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('titanqr:theme');
+    if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    document.documentElement.dataset.theme = t;
+    var params = new URLSearchParams(location.search);
+    var lp = params.get('lang');
+    if (lp === 'he' || lp === 'en') { try { localStorage.setItem('titanqr:lang', lp); } catch (e2) { /* ignore */ } }
+    var l = (lp === 'he' || lp === 'en') ? lp : localStorage.getItem('titanqr:lang');
+    if (!l) l = ((navigator.language || '').toLowerCase().indexOf('he') === 0) ? 'he' : 'en';
+    document.documentElement.lang = l;
+    document.documentElement.dir = l === 'he' ? 'rtl' : 'ltr';
+  } catch (e) { /* defaults stay */ }
+})();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3769208320963674" crossorigin="anonymous"></script>
+<title>DesignYourQR - Free QR Code Generator with Custom Designs</title>
+<meta name="description" content="Create QR codes with custom shapes, gradients, logos and frames. Free, no sign-up, no watermarks. Everything runs in your browser, so your data never leaves your device.">
+<meta name="keywords" content="qr code generator, free qr code generator, custom qr code, qr code with logo, qr code maker, design qr code, qr code creator">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="DesignYourQR">
+<link rel="canonical" href="https://designyourqr.com/">
+<link rel="alternate" hreflang="en" href="https://designyourqr.com/">
+<link rel="alternate" hreflang="he" href="https://designyourqr.com/?lang=he">
+<link rel="alternate" hreflang="x-default" href="https://designyourqr.com/">
+<meta name="theme-color" content="#0a0c12">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DesignYourQR">
+<meta property="og:title" content="DesignYourQR - Free QR Code Generator with Custom Designs">
+<meta property="og:description" content="Custom shapes, gradients, logos and frames. Free and private: everything runs in your browser.">
+<meta property="og:url" content="https://designyourqr.com/">
+<meta property="og:image" content="https://designyourqr.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DesignYourQR - free QR code generator with custom designs">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DesignYourQR - Free QR Code Generator with Custom Designs">
+<meta name="twitter:description" content="Custom shapes, gradients, logos and frames. Free, private, no sign-up.">
+<meta name="twitter:image" content="https://designyourqr.com/og.png">
+<meta name="twitter:image:alt" content="DesignYourQR - free QR code generator with custom designs">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://designyourqr.com/#org",
+      "name": "DesignYourQR",
+      "url": "https://designyourqr.com/",
+      "logo": "https://designyourqr.com/apple-touch-icon.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://designyourqr.com/#website",
+      "url": "https://designyourqr.com/",
+      "name": "DesignYourQR",
+      "description": "Free QR code generator with custom shapes, gradients, logos and frames.",
+      "publisher": { "@id": "https://designyourqr.com/#org" },
+      "inLanguage": ["en", "he"]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://designyourqr.com/#app",
+      "name": "DesignYourQR",
+      "url": "https://designyourqr.com/",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "inLanguage": ["en", "he"],
+      "isAccessibleForFree": true,
+      "description": "Free QR code generator with custom shapes, gradients, logos and frames. Runs entirely in the browser.",
+      "featureList": [
+        "Custom module and corner (eye) shapes",
+        "Solid, linear and radial gradient colors",
+        "Logo embedding with automatic background removal",
+        "Labels and frames",
+        "PNG, SVG, JPG and WebP export with optional transparent background",
+        "Link, text, Wi-Fi, email, phone, SMS and contact (vCard) codes"
+      ],
+      "publisher": { "@id": "https://designyourqr.com/#org" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to create a custom QR code",
+      "description": "Make a designed, free QR code entirely in your browser.",
+      "inLanguage": "en",
+      "step": [
+        { "@type": "HowToStep", "name": "Add your content", "text": "Choose a link, text, Wi-Fi network, email, phone, SMS or contact card and enter the details." },
+        { "@type": "HowToStep", "name": "Design it", "text": "Pick module shapes, corner styles and solid or gradient colors, or start from a preset." },
+        { "@type": "HowToStep", "name": "Add a logo", "text": "Drop in a logo; error correction rises to High automatically so the code stays scannable." },
+        { "@type": "HowToStep", "name": "Download", "text": "Check the scan meter, then download as PNG, SVG, JPG or WebP, with a transparent background if you need one." }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://designyourqr.com/#faq",
+      "mainEntity": [
+    { "@type": "Question", "name": "Are the QR codes really free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every code is a plain static QR code: the content is baked into the image itself, with no server in the middle, no scan limits and no expiry. Commercial use is fine." } },
+    { "@type": "Question", "name": "Do the codes expire?", "acceptedAnswer": { "@type": "Answer", "text": "No. The code contains the content itself, so it keeps working forever." } },
+    { "@type": "Question", "name": "Is my data uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Generation happens entirely in your browser. Links, Wi-Fi passwords and logos are never sent to a server." } },
+    { "@type": "Question", "name": "My code does not scan. What should I check?", "acceptedAnswer": { "@type": "Answer", "text": "Keep strong contrast, leave a margin, do not oversize the logo, and test with a couple of phones." } },
+    { "@type": "Question", "name": "Which format should I download?", "acceptedAnswer": { "@type": "Answer", "text": "For print use SVG or PNG at 2048 px and up. For social media and websites a regular PNG is enough." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header wrap">
+  <div class="brand">
+    <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <linearGradient id="bg1" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#6366f1"/>
+        </linearGradient>
+      </defs>
+      <rect width="64" height="64" rx="14" fill="url(#bg1)"/>
+      <path fill="#fff" d="M14 14h14v14H14zM18 18v6h6v-6zM36 14h14v14H36zM40 18v6h6v-6zM14 36h14v14H14zM18 40v6h6v-6z"/>
+      <rect x="36" y="36" width="6" height="6" rx="2" fill="#fff"/>
+      <rect x="44" y="36" width="6" height="6" rx="3" fill="#fff"/>
+      <rect x="36" y="44" width="6" height="6" rx="3" fill="#fff"/>
+      <rect x="44" y="44" width="6" height="6" rx="1" fill="#fff"/>
+    </svg>
+    DesignYourQR
+  </div>
+  <div class="header-side">
+    <span class="header-note" data-i18n="nav.note">Free. Private. No sign-up.</span>
+    <button class="iconbtn langbtn" id="btn-lang" data-i18n="nav.lang" aria-label="Language">עברית</button>
+    <button class="iconbtn" id="btn-theme" aria-label="Theme">
+      <svg class="theme-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      <svg class="theme-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <h1 data-i18n="hero.h1">Free QR code generator with custom designs</h1>
+  <p data-i18n="hero.sub">Shapes, gradients, logos and frames. Everything runs in your browser: no account, no watermarks, and nothing you type ever leaves your device.</p>
+</section>
+
+<main class="app wrap">
+
+  <section class="panel controls" aria-label="QR code settings">
+
+    <details class="sec" open>
+      <summary class="sec-head">
+        <span class="sec-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span>
+        <span class="sec-title" data-i18n="sec.content">Content</span>
+        <svg class="sec-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="sec-body">
+        <div class="tabs" role="tablist" aria-label="Content type">
+          <button class="tab" role="tab" data-type="url" data-i18n="tab.url">Link</button>
+          <button class="tab" role="tab" data-type="text" data-i18n="tab.text">Text</button>
+          <button class="tab" role="tab" data-type="wifi" data-i18n="tab.wifi">Wi-Fi</button>
+          <button class="tab" role="tab" data-type="email" data-i18n="tab.email">Email</button>
+          <button class="tab" role="tab" data-type="phone" data-i18n="tab.phone">Phone</button>
+          <button class="tab" role="tab" data-type="sms" data-i18n="tab.sms">SMS</button>
+          <button class="tab" role="tab" data-type="vcard" data-i18n="tab.vcard">Contact</button>
+        </div>
+
+        <div data-panel="url" class="field" role="tabpanel">
+          <label for="in-url" data-i18n="f.url">Web address</label>
+          <input id="in-url" type="url" data-bind="content.url" placeholder="https://example.com" spellcheck="false" autocomplete="off" dir="ltr">
+        </div>
+
+        <div data-panel="text" class="field" role="tabpanel">
+          <label for="in-text" data-i18n="f.text">Text</label>
+          <textarea id="in-text" data-bind="content.text" data-i18n-ph="f.text.ph" placeholder="Any text, up to a few hundred characters" maxlength="1500"></textarea>
+          <div class="count" id="text-count"></div>
+        </div>
+
+        <div data-panel="wifi" role="tabpanel" style="display:grid;gap:12px">
+          <div class="row2">
+            <div class="field">
+              <label for="in-ssid" data-i18n="f.ssid">Network name (SSID)</label>
+              <input id="in-ssid" type="text" data-bind="content.wifi.ssid" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="in-wifipass" data-i18n="f.wifipass">Password</label>
+              <input id="in-wifipass" type="text" data-bind="content.wifi.pass" autocomplete="off" spellcheck="false" dir="ltr">
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label for="in-enc" data-i18n="f.security">Security</label>
+              <select id="in-enc" data-bind="content.wifi.enc">
+                <option value="WPA" data-i18n="f.wifi.wpa">WPA / WPA2 / WPA3</option>
+                <option value="WEP" data-i18n="f.wifi.wep">WEP</option>
+                <option value="nopass" data-i18n="f.wifi.open">Open network</option>
+              </select>
+            </div>
+            <label class="check" style="align-self:end;padding-bottom:10px">
+              <input type="checkbox" data-bind="content.wifi.hidden"> <span data-i18n="f.wifi.hidden">Hidden network</span>
+            </label>
+          </div>
+        </div>
+
+        <div data-panel="email" role="tabpanel" style="display:grid;gap:12px">
+          <div class="field">
+            <label for="in-mailto" data-i18n="f.mailto">To</label>
+            <input id="in-mailto" type="email" data-bind="content.email.to" placeholder="name@example.com" autocomplete="off" dir="ltr">
+          </div>
+          <div class="field">
+            <label for="in-subject" data-i18n="f.subject">Subject</label>
+            <input id="in-subject" type="text" data-bind="content.email.subject">
+          </div>
+          <div class="field">
+            <label for="in-mailbody" data-i18n="f.mailbody">Message</label>
+            <textarea id="in-mailbody" data-bind="content.email.body"></textarea>
+          </div>
+        </div>
+
+        <div data-panel="phone" class="field" role="tabpanel">
+          <label for="in-phone" data-i18n="f.phone">Phone number</label>
+          <input id="in-phone" type="tel" data-bind="content.phone" placeholder="+1 555 000 1234" autocomplete="off" dir="ltr">
+        </div>
+
+        <div data-panel="sms" role="tabpanel" style="display:grid;gap:12px">
+          <div class="field">
+            <label for="in-smsto" data-i18n="f.smsto">Phone number</label>
+            <input id="in-smsto" type="tel" data-bind="content.sms.to" placeholder="+1 555 000 1234" autocomplete="off" dir="ltr">
+          </div>
+          <div class="field">
+            <label for="in-smsmsg" data-i18n="f.smsmsg">Prefilled message</label>
+            <textarea id="in-smsmsg" data-bind="content.sms.msg"></textarea>
+          </div>
+        </div>
+
+        <div data-panel="vcard" role="tabpanel" style="display:grid;gap:12px">
+          <div class="row2">
+            <div class="field"><label for="vc-first" data-i18n="f.first">First name</label><input id="vc-first" type="text" data-bind="content.vcard.first"></div>
+            <div class="field"><label for="vc-last" data-i18n="f.last">Last name</label><input id="vc-last" type="text" data-bind="content.vcard.last"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="vc-org" data-i18n="f.org">Company</label><input id="vc-org" type="text" data-bind="content.vcard.org"></div>
+            <div class="field"><label for="vc-title" data-i18n="f.title">Job title</label><input id="vc-title" type="text" data-bind="content.vcard.title"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="vc-phone" data-i18n="f.vphone">Phone</label><input id="vc-phone" type="tel" data-bind="content.vcard.phone" dir="ltr"></div>
+            <div class="field"><label for="vc-email" data-i18n="f.vemail">Email</label><input id="vc-email" type="email" data-bind="content.vcard.email" dir="ltr"></div>
+          </div>
+          <div class="field"><label for="vc-url" data-i18n="f.vurl">Website</label><input id="vc-url" type="url" data-bind="content.vcard.url" dir="ltr"></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="sec" open>
+      <summary class="sec-head">
+        <span class="sec-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg></span>
+        <span class="sec-title" data-i18n="sec.style">Style</span>
+        <svg class="sec-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="sec-body">
+        <div class="field">
+          <label data-i18n="st.presets">Quick presets</label>
+          <div class="chips" id="preset-row"></div>
+        </div>
+        <div class="field">
+          <label data-i18n="st.module">Module shape</label>
+          <div class="optgrid" id="grid-dot"></div>
+        </div>
+        <div class="field">
+          <label data-i18n="st.eyeframe">Corner frames</label>
+          <div class="optgrid" id="grid-eyeframe"></div>
+        </div>
+        <div class="field">
+          <label data-i18n="st.eyepupil">Corner dots</label>
+          <div class="optgrid" id="grid-eyepupil"></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="sec" open>
+      <summary class="sec-head">
+        <span class="sec-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="12.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="14.5" r="2.5"/><path d="M12 22a10 10 0 1 1 10-10c0 2.2-1.8 4-4 4h-2.5a2.5 2.5 0 0 0-2 4l.5.5a1.8 1.8 0 0 1-2 1.5z"/></svg></span>
+        <span class="sec-title" data-i18n="sec.colors">Colors</span>
+        <svg class="sec-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="sec-body">
+        <div class="field">
+          <label data-i18n="c.mode">Code color</label>
+          <div class="seg" id="seg-cmode">
+            <button data-set="color.mode" data-val="solid" data-i18n="c.solid">Solid</button>
+            <button data-set="color.mode" data-val="linear" data-i18n="c.linear">Gradient</button>
+            <button data-set="color.mode" data-val="radial" data-i18n="c.radial">Radial</button>
+          </div>
+        </div>
+        <div class="colorrow">
+          <div class="colorfield">
+            <label id="lbl-c1">Color</label>
+            <div class="cpair">
+              <input type="color" data-bind="color.c1" aria-labelledby="lbl-c1">
+              <input type="text" class="hex" data-hexfor="color.c1" maxlength="7" spellcheck="false" aria-label="Hex value">
+            </div>
+          </div>
+          <div class="colorfield" id="cf-c2">
+            <label id="lbl-c2">Second color</label>
+            <div class="cpair">
+              <input type="color" data-bind="color.c2" aria-labelledby="lbl-c2">
+              <input type="text" class="hex" data-hexfor="color.c2" maxlength="7" spellcheck="false" aria-label="Hex value">
+            </div>
+          </div>
+        </div>
+        <div class="field" id="cf-angle">
+          <label for="in-angle" data-i18n="c.angle">Gradient direction</label>
+          <div class="rangewrap">
+            <input id="in-angle" type="range" min="0" max="360" step="15" data-bind="color.angle">
+            <output id="out-angle"></output>
+          </div>
+        </div>
+        <div class="swatches" id="fg-swatches" aria-label="Color suggestions"></div>
+        <label class="check"><input type="checkbox" data-bind="eye.custom" id="ck-eyecustom"> <span data-i18n="c.eyecustom">Use separate colors for the corners</span></label>
+        <div class="colorrow hidden" id="eyecolors">
+          <div class="colorfield">
+            <label id="lbl-eyef" data-i18n="c.eyeframe">Corner frame</label>
+            <div class="cpair">
+              <input type="color" data-bind="eye.frame" aria-labelledby="lbl-eyef">
+              <input type="text" class="hex" data-hexfor="eye.frame" maxlength="7" spellcheck="false" aria-label="Hex value">
+            </div>
+          </div>
+          <div class="colorfield">
+            <label id="lbl-eyep" data-i18n="c.eyepupil">Corner dot</label>
+            <div class="cpair">
+              <input type="color" data-bind="eye.pupil" aria-labelledby="lbl-eyep">
+              <input type="text" class="hex" data-hexfor="eye.pupil" maxlength="7" spellcheck="false" aria-label="Hex value">
+            </div>
+          </div>
+        </div>
+        <div class="colorrow">
+          <div class="colorfield">
+            <label id="lbl-bg" data-i18n="c.bg">Background</label>
+            <div class="cpair">
+              <input type="color" data-bind="bg.color" aria-labelledby="lbl-bg">
+              <input type="text" class="hex" data-hexfor="bg.color" maxlength="7" spellcheck="false" aria-label="Hex value">
+            </div>
+          </div>
+          <label class="check" style="padding-bottom:10px"><input type="checkbox" data-bind="bg.transparent"> <span data-i18n="c.transparent">Transparent background</span></label>
+        </div>
+        <div class="swatches" id="bg-swatches" aria-label="Background suggestions"></div>
+      </div>
+    </details>
+
+    <details class="sec">
+      <summary class="sec-head">
+        <span class="sec-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-4.5-4.5L7 20"/></svg></span>
+        <span class="sec-title" data-i18n="sec.logo">Logo</span>
+        <svg class="sec-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="sec-body">
+        <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Upload a logo">
+          <span data-i18n="lg.drop">Drop an image here or click to browse</span>
+          <div class="sub" data-i18n="lg.drop.sub">PNG, JPG or SVG. It stays on your device.</div>
+        </div>
+        <input type="file" id="logo-file" accept="image/*,.svg" class="hidden">
+        <div class="logorow hidden" id="logorow">
+          <img id="logo-thumb" alt="Logo preview">
+          <div class="meta" id="logo-meta"></div>
+          <button class="btn btn-ghost btn-danger" data-action="logo-remove" data-i18n="lg.remove">Remove</button>
+        </div>
+        <div id="logo-controls" class="hidden" style="display:grid;gap:15px">
+          <label class="check hidden" id="logo-cut-row">
+            <input type="checkbox" data-bind="logo.cut"> <span data-i18n="lg.cut">Remove the background</span>
+          </label>
+          <div class="field">
+            <label for="in-logosize" data-i18n="lg.size">Logo size</label>
+            <div class="rangewrap">
+              <input id="in-logosize" type="range" min="12" max="32" step="1" data-bind="logo.size">
+              <output id="out-logosize"></output>
+            </div>
+          </div>
+          <div class="field">
+            <label data-i18n="lg.backdrop">Backdrop</label>
+            <div class="seg">
+              <button data-set="logo.backdrop" data-val="none" data-i18n="lg.bd.none">None</button>
+              <button data-set="logo.backdrop" data-val="square" data-i18n="lg.bd.square">Square</button>
+              <button data-set="logo.backdrop" data-val="rounded" data-i18n="lg.bd.rounded">Rounded</button>
+              <button data-set="logo.backdrop" data-val="circle" data-i18n="lg.bd.circle">Circle</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="in-logopad" data-i18n="lg.pad">Backdrop padding</label>
+            <div class="rangewrap">
+              <input id="in-logopad" type="range" min="0" max="4" step="0.5" data-bind="logo.pad">
+              <output id="out-logopad"></output>
+            </div>
+          </div>
+          <label class="check"><input type="checkbox" data-bind="logo.excavate"> <span data-i18n="lg.excavate">Clear modules behind the logo</span></label>
+          <p class="sec-note" data-i18n="lg.note">Error correction switches to High while a logo is on, so the code stays easy to scan.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="sec">
+      <summary class="sec-head">
+        <span class="sec-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 17h8"/></svg></span>
+        <span class="sec-title" data-i18n="sec.frame">Frame</span>
+        <svg class="sec-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="sec-body">
+        <div class="seg">
+          <button data-set="frame.style" data-val="none" data-i18n="fr.none">None</button>
+          <button data-set="frame.style" data-val="bottom" data-i18n="fr.bottom">Label below</button>
+          <button data-set="frame.style" data-val="top" data-i18n="fr.top">Label above</button>
+        </div>
+        <div id="frame-controls" class="hidden" style="display:grid;gap:15px">
+          <div class="field">
+            <label for="in-frametext" data-i18n="fr.text">Label text</label>
+            <input id="in-frametext" type="text" data-bind="frame.text" maxlength="32" placeholder="SCAN ME">
+          </div>
+          <div class="colorrow">
+            <div class="colorfield">
+              <label id="lbl-framec" data-i18n="fr.color">Frame color</label>
+              <div class="cpair">
+                <input type="color" data-bind="frame.color" aria-labelledby="lbl-framec">
+                <input type="text" class="hex" data-hexfor="frame.color" maxlength="7" spellcheck="false" aria-label="Hex value">
+              </div>
+            </div>
+            <div class="colorfield">
+              <label id="lbl-framet" data-i18n="fr.textcolor">Text color</label>
+              <div class="cpair">
+                <input type="color" data-bind="frame.textColor" aria-labelledby="lbl-framet">
+                <input type="text" class="hex" data-hexfor="frame.textColor" maxlength="7" spellcheck="false" aria-label="Hex value">
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="in-framefont" data-i18n="fr.font">Label font</label>
+            <select id="in-framefont" data-bind="frame.font">
+              <option value="sans" data-i18n="fr.font.sans">Modern sans</option>
+              <option value="serif" data-i18n="fr.font.serif">Serif</option>
+              <option value="mono" data-i18n="fr.font.mono">Monospace</option>
+              <option value="round" data-i18n="fr.font.round">Rounded</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="sec">
+      <summary class="sec-head">
+        <span class="sec-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><path d="M1 14h6M9 8h6M17 16h6"/></svg></span>
+        <span class="sec-title" data-i18n="sec.advanced">Advanced</span>
+        <svg class="sec-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="sec-body">
+        <div class="field">
+          <label data-i18n="adv.ec">Error correction</label>
+          <div class="seg">
+            <button data-set="ec" data-val="L" data-i18n="adv.ec.l" data-i18n-title="adv.ec.l.title" title="Smallest code, least damage tolerance">Low</button>
+            <button data-set="ec" data-val="M" data-i18n="adv.ec.m" data-i18n-title="adv.ec.m.title" title="Tolerates about 15 percent damage">Medium</button>
+            <button data-set="ec" data-val="Q" data-i18n="adv.ec.q" data-i18n-title="adv.ec.q.title" title="Tolerates about 25 percent damage">Quartile</button>
+            <button data-set="ec" data-val="H" data-i18n="adv.ec.h" data-i18n-title="adv.ec.h.title" title="Tolerates about 30 percent damage, best with logos">High</button>
+          </div>
+          <p class="sec-note hidden" id="ec-note" data-i18n="adv.ecnote">A logo is on, so High is being used regardless of this setting.</p>
+        </div>
+        <div class="field">
+          <label for="in-margin" data-i18n="adv.margin">Quiet zone (margin)</label>
+          <div class="rangewrap">
+            <input id="in-margin" type="range" min="0" max="8" step="1" data-bind="margin">
+            <output id="out-margin"></output>
+          </div>
+        </div>
+        <div class="btnrow">
+          <button class="btn btn-ghost" data-action="share" data-i18n="adv.share">Copy design link</button>
+          <button class="btn btn-ghost btn-danger" data-action="reset" data-i18n="adv.reset">Reset everything</button>
+        </div>
+      </div>
+    </details>
+
+  </section>
+
+  <aside class="side">
+    <div class="preview-card" aria-label="Preview and download">
+      <div class="stage" id="stage">
+        <div id="preview-svg" aria-live="polite"></div>
+        <div class="overlay hidden" id="overlay"></div>
+      </div>
+      <div class="meta-line" id="meta-line"></div>
+      <div class="scanline good" id="scanline">
+        <span class="dot"></span><span id="scan-text">Scans well</span>
+      </div>
+      <p class="scan-reasons hidden" id="scan-reasons"></p>
+      <div class="export-row">
+        <div class="seg" id="seg-format">
+          <button data-set="exportFormat" data-val="png">PNG</button>
+          <button data-set="exportFormat" data-val="svg">SVG</button>
+          <button data-set="exportFormat" data-val="jpeg">JPG</button>
+          <button data-set="exportFormat" data-val="webp">WebP</button>
+        </div>
+        <select id="export-size" aria-label="Image size">
+          <option value="512">512 px</option>
+          <option value="1024" selected>1024 px</option>
+          <option value="2048">2048 px</option>
+          <option value="4096">4096 px</option>
+        </select>
+      </div>
+      <label class="check" id="export-alpha">
+        <input type="checkbox" data-bind="bg.transparent"> <span data-i18n="c.transparent">Transparent background</span>
+      </label>
+      <p class="tiny-note hidden" id="alpha-note" data-i18n="ex.jpgnote">JPG has no transparency, so this file gets a white background. Pick PNG, SVG or WebP for a transparent file.</p>
+      <button class="btn btn-primary btn-lg" id="btn-download" data-action="download">Download PNG</button>
+      <button class="btn btn-ghost" id="btn-copy" data-action="copy" data-i18n="btn.copy">Copy as image</button>
+      <p class="tiny-note" data-i18n="tip.scan">Tip: point your phone camera at the preview to test it.</p>
+    </div>
+    <div class="ad-slot" id="ad-side" hidden>
+      <span class="ad-tag" data-i18n="ads.label">Advertisement</span>
+    </div>
+  </aside>
+
+</main>
+
+<section class="faq wrap">
+  <h2 data-i18n="faq.title">Questions and answers</h2>
+  <details class="faq-item">
+    <summary data-i18n="faq.q1">Are the QR codes really free?</summary>
+    <p data-i18n="faq.a1">Yes. Every code made here is a plain static QR code: the content is baked into the image itself, with no server in the middle, no scan limits and no expiry. Commercial use is fine.</p>
+  </details>
+  <details class="faq-item">
+    <summary data-i18n="faq.q2">Do the codes expire?</summary>
+    <p data-i18n="faq.a2">No. The code contains the content itself, so it keeps working forever. If you encoded a link, it works for as long as the site it points to exists.</p>
+  </details>
+  <details class="faq-item">
+    <summary data-i18n="faq.q3">Is my data uploaded anywhere?</summary>
+    <p data-i18n="faq.a3">No. Generation happens entirely in your browser. Links, Wi-Fi passwords and logos are never sent to a server.</p>
+  </details>
+  <details class="faq-item">
+    <summary data-i18n="faq.q4">My code does not scan. What should I check?</summary>
+    <p data-i18n="faq.a4">Keep strong contrast between the code and its background, leave a margin, do not oversize the logo, and test with a couple of phones. The scan meter under the preview flags the common problems.</p>
+  </details>
+  <details class="faq-item">
+    <summary data-i18n="faq.q5">Which format should I download?</summary>
+    <p data-i18n="faq.a5">For print, use SVG (sharp at any size) or PNG at 2048 px and up. For social media and websites, a regular PNG is enough.</p>
+  </details>
+</section>
+
+<div class="ad-slot wrap" id="ad-bottom" hidden>
+  <span class="ad-tag" data-i18n="ads.label">Advertisement</span>
+</div>
+
+<footer class="site-footer wrap">
+  <span data-i18n="footer.line1">Codes are generated in your browser. Links, passwords and logos never touch a server.</span>
+  <span><span data-i18n="footer.line2">2026 DesignYourQR - designyourqr.com</span> - <a href="/privacy" data-i18n="footer.privacy">Privacy</a></span>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/qr-encoder.js"></script>
+<script src="/renderer.js"></script>
+<script src="/i18n.js"></script>
+<script src="/app.js"></script>
+<script src="/ads.js"></script>
+</body>
+</html>

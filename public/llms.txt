@@ -1,0 +1,21 @@
+# DesignYourQR
+
+> Free online QR code generator with custom designs. Everything runs client-side in the visitor's browser: no sign-up, no watermarks, and no data leaves the device.
+
+DesignYourQR (https://designyourqr.com) creates static QR codes that never expire and have no scan limits. It is free for personal and commercial use.
+
+## What it does
+- Encodes links, plain text, Wi-Fi networks, email, phone, SMS and contact cards (vCard).
+- Custom design: module shapes, corner (eye) styles, solid or gradient colors, and one-click presets.
+- Logo embedding with automatic background removal; error correction rises to High so the code stays scannable.
+- Optional labels and frames (for example "SCAN ME").
+- Export as PNG, SVG, JPG or WebP, up to 4096 px, with an optional transparent background.
+- Interface in English and Hebrew (right-to-left). The Hebrew page is at https://designyourqr.com/?lang=he
+
+## Privacy
+QR generation is entirely client-side. Links, passwords, contact details and uploaded logos are never sent to a server. Full policy: https://designyourqr.com/privacy
+
+## Key facts
+- Price: free. No account, no watermark, no expiry, commercial use allowed.
+- Codes are static: the content is baked into the image itself, so there is no redirect and nothing to disable.
+- Built as a single static page; works offline once loaded.

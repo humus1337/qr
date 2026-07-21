@@ -1,0 +1,18 @@
+name = "qr-titan"
+main = "worker.js"
+compatibility_date = "2026-07-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+
+# Canonical home
+[[routes]]
+pattern = "designyourqr.com"
+custom_domain = true
+
+# www folds into the apex (301 in worker.js)
+[[routes]]
+pattern = "www.designyourqr.com"
+custom_domain = true
