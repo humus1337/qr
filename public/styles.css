@@ -10,7 +10,7 @@
   --border-strong: #3a4256;
   --text: #e9edf5;
   --muted: #98a2b5;
-  --faint: #6b7488;
+  --faint: #838da1;
   --icon: #c3cbda;
   --accent: #6366f1;
   --accent-2: #0ea5e9;
@@ -43,7 +43,7 @@
   --border-strong: #b9c2d4;
   --text: #161b26;
   --muted: #57627a;
-  --faint: #8791a5;
+  --faint: #616a7d;
   --icon: #46536e;
   --accent-ink: #4338ca;
   --good: #059669;
@@ -331,7 +331,7 @@ button.opt {
 
 button.opt svg { width: 30px; height: 30px; display: block; }
 
-button.opt span { font-size: 10.5px; color: var(--faint); font-weight: 600; }
+button.opt span { font-size: 10.5px; color: var(--muted); font-weight: 600; }
 
 button.opt:hover { border-color: var(--border-strong); color: var(--text); }
 
