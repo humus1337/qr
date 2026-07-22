@@ -313,7 +313,7 @@ select {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(66px, 1fr));
   gap: 8px;
-  min-height: 66px; /* reserve one row so JS-built buttons do not shift layout (CLS) */
+  min-height: 70px; /* reserve one row (desktop populated height) so JS-built buttons do not shift layout (CLS) */
 }
 
 button.opt {
@@ -380,7 +380,7 @@ button.opt.selected span { color: var(--accent-ink); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 
-#preset-row { min-height: 74px; } /* reserve rows for JS-built preset chips (CLS) */
+#preset-row { min-height: 78px; } /* reserve rows for JS-built preset chips (CLS) */
 
 .chip {
   display: flex;

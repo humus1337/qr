@@ -183,13 +183,13 @@
           <input id="in-url" type="url" data-bind="content.url" placeholder="https://example.com" spellcheck="false" autocomplete="off" dir="ltr">
         </div>
 
-        <div data-panel="text" class="field" role="tabpanel">
+        <div data-panel="text" class="field hidden" role="tabpanel">
           <label for="in-text" data-i18n="f.text">Text</label>
           <textarea id="in-text" data-bind="content.text" data-i18n-ph="f.text.ph" placeholder="Any text, up to a few hundred characters" maxlength="1500"></textarea>
           <div class="count" id="text-count"></div>
         </div>
 
-        <div data-panel="wifi" role="tabpanel" style="display:grid;gap:12px">
+        <div data-panel="wifi" class="hidden" role="tabpanel" style="display:grid;gap:12px">
           <div class="row2">
             <div class="field">
               <label for="in-ssid" data-i18n="f.ssid">Network name (SSID)</label>
@@ -215,7 +215,7 @@
           </div>
         </div>
 
-        <div data-panel="email" role="tabpanel" style="display:grid;gap:12px">
+        <div data-panel="email" class="hidden" role="tabpanel" style="display:grid;gap:12px">
           <div class="field">
             <label for="in-mailto" data-i18n="f.mailto">To</label>
             <input id="in-mailto" type="email" data-bind="content.email.to" placeholder="name@example.com" autocomplete="off" dir="ltr">
@@ -230,12 +230,12 @@
           </div>
         </div>
 
-        <div data-panel="phone" class="field" role="tabpanel">
+        <div data-panel="phone" class="field hidden" role="tabpanel">
           <label for="in-phone" data-i18n="f.phone">Phone number</label>
           <input id="in-phone" type="tel" data-bind="content.phone" placeholder="+1 555 000 1234" autocomplete="off" dir="ltr">
         </div>
 
-        <div data-panel="sms" role="tabpanel" style="display:grid;gap:12px">
+        <div data-panel="sms" class="hidden" role="tabpanel" style="display:grid;gap:12px">
           <div class="field">
             <label for="in-smsto" data-i18n="f.smsto">Phone number</label>
             <input id="in-smsto" type="tel" data-bind="content.sms.to" placeholder="+1 555 000 1234" autocomplete="off" dir="ltr">
@@ -246,7 +246,7 @@
           </div>
         </div>
 
-        <div data-panel="vcard" role="tabpanel" style="display:grid;gap:12px">
+        <div data-panel="vcard" class="hidden" role="tabpanel" style="display:grid;gap:12px">
           <div class="row2">
             <div class="field"><label for="vc-first" data-i18n="f.first">First name</label><input id="vc-first" type="text" data-bind="content.vcard.first"></div>
             <div class="field"><label for="vc-last" data-i18n="f.last">Last name</label><input id="vc-last" type="text" data-bind="content.vcard.last"></div>
