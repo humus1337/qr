@@ -307,6 +307,9 @@ function loadState() {
     }
     mergeKnown(st, design);
   }
+  // landing pages deep-link a content type via ?type=wifi etc; that wins over saved state
+  const tp = new URLSearchParams(location.search).get('type');
+  if (['url', 'text', 'wifi', 'email', 'phone', 'sms', 'vcard'].includes(tp)) st.type = tp;
   return st;
 }
 

@@ -155,6 +155,7 @@ window.TitanI18N = {
     'preset.classic': 'Classic', 'preset.ink': 'Ink', 'preset.ocean': 'Ocean', 'preset.sunset': 'Sunset',
     'preset.forest': 'Forest', 'preset.grape': 'Grape', 'preset.midnight': 'Midnight', 'preset.blush': 'Blush', 'preset.stripe': 'Stripe',
 
+    'hub.title': 'Popular QR code types',
     'faq.title': 'Questions and answers',
     'faq.q1': 'Are the QR codes really free?',
     'faq.a1': 'Yes, completely free. Every code is a plain static QR code with the content baked into the image: no sign-up, no watermark, no scan limit and no expiry, and commercial use is fine. Many other QR generators watermark free codes, cap scans, or make dynamic codes expire unless you pay. Nothing here is locked behind a paywall.',
@@ -330,6 +331,7 @@ window.TitanI18N = {
     'preset.classic': 'קלאסי', 'preset.ink': 'דיו', 'preset.ocean': 'אוקיינוס', 'preset.sunset': 'שקיעה',
     'preset.forest': 'יער', 'preset.grape': 'ענבים', 'preset.midnight': 'חצות', 'preset.blush': 'סומק', 'preset.stripe': 'פסים',
 
+    'hub.title': 'סוגי קודי QR נפוצים',
     'faq.title': 'שאלות ותשובות',
     'faq.q1': 'הקודים באמת חינמיים?',
     'faq.a1': 'כן, לגמרי חינם. כל קוד הוא קוד QR סטטי שהתוכן מוטמע בתמונה: בלי הרשמה, בלי סימן מים, בלי מגבלת סריקות ובלי תפוגה, וגם שימוש מסחרי מותר. הרבה מחוללים אחרים מוסיפים סימן מים לקודים חינמיים, מגבילים סריקות, או גורמים לקודים דינמיים לפוג אם לא משלמים. כאן שום דבר לא נעול מאחורי תשלום.',

@@ -777,3 +777,74 @@ input[type="range"]::-moz-range-thumb {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* landing pages (use-case content pages) */
+
+a.btn { display: inline-block; text-decoration: none; text-align: center; }
+
+.lp { max-width: 800px; padding-bottom: 56px; }
+
+.lp .crumbs { font-size: 12.5px; color: var(--faint); margin: 20px 0 0; }
+.lp .crumbs a { color: var(--muted); text-decoration: none; }
+.lp .crumbs a:hover { text-decoration: underline; }
+
+.lp h1 {
+  font-size: clamp(24px, 4vw, 32px);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  margin: 14px 0 10px;
+}
+
+.lp .lead { font-size: 16px; color: var(--muted); max-width: 660px; margin: 0 0 22px; }
+
+.lp h2 { font-size: 19px; margin: 34px 0 10px; letter-spacing: -0.01em; }
+
+.lp p, .lp li { color: var(--muted); font-size: 15px; }
+.lp p { margin: 0 0 12px; }
+
+.lp .cta-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 6px 0 8px; }
+.lp .cta-note { font-size: 12.5px; color: var(--faint); }
+
+.lp-steps { margin: 0; padding: 0; counter-reset: step; list-style: none; display: grid; gap: 12px; }
+.lp-steps li {
+  position: relative;
+  padding-inline-start: 42px;
+  min-height: 30px;
+}
+.lp-steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  inset-inline-start: 0;
+  top: -2px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.lp-steps li strong { color: var(--text); font-weight: 600; }
+
+.lp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-top: 6px; }
+.lp-card {
+  display: block;
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+.lp-card span { display: block; font-weight: 400; font-size: 12.5px; color: var(--faint); margin-top: 2px; }
+.lp-card:hover { border-color: var(--border-strong); }
+
+.lp hr { border: 0; border-top: 1px solid var(--border); margin: 34px 0; }
+
+.linkhub { padding: 22px 0 6px; }
+.linkhub h2 { font-size: 20px; margin: 0 0 14px; }

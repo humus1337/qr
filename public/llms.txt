@@ -11,5 +11,15 @@ It encodes links, plain text, Wi-Fi networks, email, phone, SMS and contact card
 - [Free QR code generator in Hebrew](https://designyourqr.com/?lang=he): the same tool with a Hebrew, right-to-left interface.
 - [Privacy policy](https://designyourqr.com/privacy): QR generation is client-side; links, passwords and uploaded logos are never sent to a server.
 
+## Use-case guides
+- [Wi-Fi QR code generator](https://designyourqr.com/wifi-qr-code): a code guests scan to join a network without typing the password.
+- [vCard QR code generator](https://designyourqr.com/vcard-qr-code): a digital business card that saves contact details straight to a phone.
+- [QR code for restaurant menus](https://designyourqr.com/qr-code-for-menu): link an online menu, free and with no monthly fee or expiry.
+- [QR code with a logo](https://designyourqr.com/qr-code-with-logo): embed a logo that stays scannable, with no watermark on the download.
+- [Instagram QR code generator](https://designyourqr.com/instagram-qr-code): a code to an Instagram profile that opens from any phone camera.
+- [Email QR code generator](https://designyourqr.com/email-qr-code): a code that opens a prefilled email (mailto).
+- [Phone number QR code generator](https://designyourqr.com/phone-qr-code): a code that starts a call (tel).
+- [SMS QR code generator](https://designyourqr.com/sms-qr-code): a code that opens a prefilled text message.
+
 ## Resources
 - [Sitemap](https://designyourqr.com/sitemap.xml): all indexable URLs on the site.
