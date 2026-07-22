@@ -310,6 +310,14 @@ function loadState() {
   return st;
 }
 
+/* push semantic events to the dataLayer for GTM/GA4 (best-effort, never throws) */
+function track(event, params) {
+  try {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event: event }, params));
+  } catch (e) { /* analytics is best-effort */ }
+}
+
 function doShare() {
   const d = {
     dot: state.dot, eyeFrame: state.eyeFrame, eyePupil: state.eyePupil,
@@ -318,7 +326,7 @@ function doShare() {
   };
   const url = location.origin + location.pathname + '#d=' + b64urlEncode(JSON.stringify(d));
   navigator.clipboard.writeText(url).then(
-    () => toast(t('toast.linkcopied')),
+    () => { track('qr_copy_link'); toast(t('toast.linkcopied')); },
     () => toast(t('toast.clipfail'))
   );
 }
@@ -487,6 +495,7 @@ async function doDownload() {
     document.body.appendChild(a);
     a.click();
     a.remove();
+    track('qr_download', { qr_format: fmt, qr_size: px, qr_content_type: state.type });
     setTimeout(() => URL.revokeObjectURL(a.href), 5000);
   } catch (err) {
     toast(t('toast.exportfail'));
@@ -498,6 +507,7 @@ async function doCopy() {
   try {
     const blob = await rasterBlob('image/png', 1024);
     await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+    track('qr_copy_image', { qr_content_type: state.type });
     toast(t('toast.copied'));
   } catch (err) {
     toast(t('toast.copyfail'));
