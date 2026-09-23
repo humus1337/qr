@@ -848,3 +848,12 @@ a.btn { display: inline-block; text-decoration: none; text-align: center; }
 
 .linkhub { padding: 22px 0 6px; }
 .linkhub h2 { font-size: 20px; margin: 0 0 14px; }
+
+.lp .byline { font-size: 13px; color: var(--faint); margin: 0 0 20px; }
+.lp-tablewrap { overflow-x: auto; margin: 4px 0 8px; }
+.lp-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.lp-table th, .lp-table td { border: 1px solid var(--border); padding: 9px 12px; text-align: start; vertical-align: top; }
+.lp-table thead th { background: var(--surface-2); color: var(--text); font-weight: 600; }
+.lp-table th[scope="row"] { color: var(--text); font-weight: 500; }
+.lp-table td { color: var(--muted); }
+.lp-table .yes { color: var(--good); font-weight: 600; }

@@ -11,6 +11,16 @@ It encodes links, plain text, Wi-Fi networks, email, phone, SMS and contact card
 - [Free QR code generator in Hebrew](https://designyourqr.com/?lang=he): the same tool with a Hebrew, right-to-left interface.
 - [Privacy policy](https://designyourqr.com/privacy): QR generation is client-side; links, passwords and uploaded logos are never sent to a server.
 
+## Why it is genuinely free
+Many QR generators advertise a free tier but then watermark the download, expire the code after a trial, cap scans, or require an account or a credit card. DesignYourQR does none of that. Every code is a static QR that is free forever, has no watermark, no scan limit and no expiry, is fine for commercial use, and is generated entirely in your browser so nothing you enter is uploaded. A static code cannot expire because the content is stored inside the image itself, with no server in the loop. See [Free QR code generator with no watermark](https://designyourqr.com/free-qr-code-no-watermark) for a feature comparison.
+
+## Common questions
+- Is it really free? Yes. Every code is a static QR with no watermark, no scan limit and no expiry, and commercial use is allowed. There is no account and no credit card.
+- Which QR generator has no watermark? DesignYourQR downloads are clean; no watermark is added unless you add a label yourself.
+- Do the codes expire? No. A static QR holds the content itself, so it keeps working with no server and no subscription.
+- Is my data private? Yes. Generation happens in your browser; links, Wi-Fi passwords and uploaded logos are never sent to a server.
+- Can I add a logo without a watermark? Yes. Drop a logo in the center; error correction rises to High automatically and the download has no watermark.
+
 ## Use-case guides
 - [Wi-Fi QR code generator](https://designyourqr.com/wifi-qr-code): a code guests scan to join a network without typing the password.
 - [vCard QR code generator](https://designyourqr.com/vcard-qr-code): a digital business card that saves contact details straight to a phone.
