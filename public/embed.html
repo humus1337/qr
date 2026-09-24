@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR code generator widget | DesignYourQR</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    background: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+  .eq { max-width: 420px; margin: 0 auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+  .eq-tabs { display: flex; gap: 6px; }
+  .eq-tab {
+    border: 1px solid #e2e8f0; background: #f8fafc; color: #475569;
+    font: inherit; font-size: 13px; font-weight: 600; padding: 6px 14px;
+    border-radius: 999px; cursor: pointer;
+  }
+  .eq-tab[aria-selected="true"] { background: linear-gradient(135deg, #0ea5e9, #6366f1); color: #fff; border-color: transparent; }
+  #eq-input {
+    width: 100%; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px 12px;
+    font: inherit; font-size: 14px; color: #0f172a;
+  }
+  #eq-input:focus { outline: none; border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); }
+  .eq-stage { display: grid; place-items: center; padding: 8px; min-height: 210px; }
+  #eq-preview svg { width: 100%; max-width: 220px; height: auto; display: block; filter: drop-shadow(0 8px 22px rgba(15, 23, 42, 0.14)); }
+  .eq-empty { color: #94a3b8; font-size: 13px; padding: 74px 0; text-align: center; }
+  .eq-presets { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .eq-sw { width: 24px; height: 24px; border-radius: 50%; border: 2px solid rgba(15, 23, 42, 0.12); cursor: pointer; padding: 0; }
+  .eq-sw[aria-pressed="true"] { box-shadow: 0 0 0 2px #6366f1; border-color: #fff; }
+  .eq-row { display: flex; gap: 8px; }
+  #eq-size { border: 1px solid #cbd5e1; border-radius: 10px; padding: 8px 10px; font: inherit; font-size: 13px; color: #0f172a; background: #fff; }
+  .eq-btn {
+    flex: 1; border: 1px solid #cbd5e1; background: #fff; color: #0f172a;
+    font: inherit; font-size: 13.5px; font-weight: 600; padding: 9px 12px; border-radius: 10px; cursor: pointer;
+  }
+  .eq-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .eq-primary { border: 0; color: #fff; background: linear-gradient(135deg, #0ea5e9, #6366f1); }
+  .eq-primary:disabled { opacity: 0.5; }
+  .eq-credit { display: block; text-align: center; font-size: 11.5px; color: #94a3b8; text-decoration: none; margin-top: 2px; }
+  .eq-credit:hover { color: #6366f1; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9edf5; }
+    .eq-tab { background: #1a1e2a; border-color: #262c3b; color: #98a2b5; }
+    #eq-input, #eq-size { background: #12151d; border-color: #262c3b; color: #e9edf5; }
+    .eq-btn { background: #1a1e2a; border-color: #262c3b; color: #e9edf5; }
+    .eq-credit { color: #838da1; }
+  }
+</style>
+</head>
+<body>
+<div class="eq">
+  <div class="eq-tabs" role="tablist" aria-label="Content type">
+    <button class="eq-tab" type="button" role="tab" data-type="url" aria-selected="true">Link</button>
+    <button class="eq-tab" type="button" role="tab" data-type="text" aria-selected="false">Text</button>
+  </div>
+  <input id="eq-input" type="text" placeholder="https://example.com" spellcheck="false" autocomplete="off" aria-label="Link or text to encode">
+  <div class="eq-stage"><div id="eq-preview" aria-live="polite"></div></div>
+  <div class="eq-presets" id="eq-presets" aria-label="Style presets"></div>
+  <div class="eq-row">
+    <select id="eq-size" aria-label="Download size">
+      <option value="512">512 px</option>
+      <option value="1024" selected>1024 px</option>
+      <option value="2048">2048 px</option>
+    </select>
+    <button id="eq-png" class="eq-btn eq-primary" type="button">Download PNG</button>
+    <button id="eq-svg" class="eq-btn" type="button">SVG</button>
+  </div>
+  <a class="eq-credit" href="https://designyourqr.com/?utm_source=embed&utm_medium=widget" target="_blank" rel="noopener">Made with DesignYourQR</a>
+</div>
+<script src="/qr-encoder.js" defer></script>
+<script src="/renderer.js" defer></script>
+<script src="/embed.js" defer></script>
+</body>
+</html>

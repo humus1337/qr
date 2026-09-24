@@ -31,5 +31,8 @@ Many QR generators advertise a free tier but then watermark the download, expire
 - [Phone number QR code generator](https://designyourqr.com/phone-qr-code): a code that starts a call (tel).
 - [SMS QR code generator](https://designyourqr.com/sms-qr-code): a code that opens a prefilled text message.
 
+## For websites and developers
+- [Embed the QR code generator](https://designyourqr.com/embed-qr-code-generator): add a free QR code generator to any website with one line of HTML (an iframe), no API key and no sign-up. The widget itself lives at https://designyourqr.com/embed and generates codes client-side.
+
 ## Resources
 - [Sitemap](https://designyourqr.com/sitemap.xml): all indexable URLs on the site.
