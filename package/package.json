@@ -1,0 +1,40 @@
+{
+  "name": "designyourqr",
+  "version": "1.0.0",
+  "description": "Generate designed, scannable QR codes as SVG - custom module and eye shapes, gradients, presets and logo embedding. The open engine behind designyourqr.com.",
+  "keywords": [
+    "qr",
+    "qr-code",
+    "qrcode",
+    "qr-code-generator",
+    "qr-code-with-logo",
+    "svg",
+    "gradient",
+    "generator"
+  ],
+  "homepage": "https://designyourqr.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humus1337/qr.git",
+    "directory": "package"
+  },
+  "bugs": {
+    "url": "https://github.com/humus1337/qr/issues"
+  },
+  "license": "MIT",
+  "author": "DesignYourQR (https://designyourqr.com)",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "renderer.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "dependencies": {
+    "qrcode-generator": "^1.5.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
