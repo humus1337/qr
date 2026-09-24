@@ -30,6 +30,11 @@ Many QR generators advertise a free tier but then watermark the download, expire
 - [Email QR code generator](https://designyourqr.com/email-qr-code): a code that opens a prefilled email (mailto).
 - [Phone number QR code generator](https://designyourqr.com/phone-qr-code): a code that starts a call (tel).
 - [SMS QR code generator](https://designyourqr.com/sms-qr-code): a code that opens a prefilled text message.
+- [WhatsApp QR code generator](https://designyourqr.com/whatsapp-qr-code): a code that opens a WhatsApp chat (wa.me click-to-chat), with an optional prefilled message.
+- [Google review QR code generator](https://designyourqr.com/google-review-qr-code): a code customers scan to leave a Google review, for collecting more reviews.
+
+## Guides
+- [Static vs dynamic QR codes](https://designyourqr.com/static-vs-dynamic-qr-code): the difference between static and dynamic QR codes, why static codes never expire, and when to use each.
 
 ## For websites and developers
 - [Embed the QR code generator](https://designyourqr.com/embed-qr-code-generator): add a free QR code generator to any website with one line of HTML (an iframe), no API key and no sign-up. The widget itself lives at https://designyourqr.com/embed and generates codes client-side.
