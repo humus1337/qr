@@ -4,15 +4,15 @@ Tags: qr code, qr, qrcode, qr generator, qr code with logo
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Add designed, scannable QR codes to any post or page with a shortcode. Static codes that never expire, style presets, gradients and custom shapes.
+Add designed, scannable QR codes to any post or page with a shortcode or a block. Static codes that never expire, style presets, gradients and custom shapes.
 
 == Description ==
 
-DesignYourQR adds a simple `[designyourqr]` shortcode that draws a styled QR code anywhere on your site. It is the same engine that powers [designyourqr.com](https://designyourqr.com), bundled as a self-contained plugin.
+DesignYourQR adds a "QR Code (DesignYourQR)" block and a `[designyourqr]` shortcode that draw a styled QR code anywhere on your site. It is the same engine that powers [designyourqr.com](https://designyourqr.com), bundled as a self-contained plugin.
 
 The code is rendered in the visitor's browser as a crisp SVG. Nothing is sent to an external server, there is no API key, and the codes are static, so they never expire and keep working even if the plugin is later removed from the page as an image.
 
@@ -26,7 +26,9 @@ The code is rendered in the visitor's browser as a crisp SVG. Nothing is sent to
 * Scales to its container and looks sharp at any size (SVG).
 * No tracking, no external requests, no account.
 
-**Basic usage**
+**Two ways to use it**
+
+In the block editor, add the "QR Code (DesignYourQR)" block and set the content and style in the sidebar. Or drop the shortcode into any post, page or widget:
 
 `[designyourqr content="https://example.com" preset="ocean" size="300"]`
 
@@ -81,6 +83,9 @@ The code is drawn by the bundled script, so it needs the plugin active on pages 
 2. Different presets and shapes.
 
 == Changelog ==
+
+= 1.1.0 =
+* Added a block editor block ("QR Code (DesignYourQR)") with controls for content, type, preset, size, shapes and colors. Shares the same engine and output as the shortcode.
 
 = 1.0.0 =
 * First release: [designyourqr] shortcode with presets, shapes, gradients and seven content types.
