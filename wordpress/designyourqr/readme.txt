@@ -1,14 +1,14 @@
 === DesignYourQR - QR Code Generator ===
-Contributors: designyourqr
-Tags: qr code, qr, qrcode, qr generator, qr code with logo
+Contributors: steven1337
+Tags: qr code, qr, qrcode, qr generator, block
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 7.1
 Requires PHP: 7.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Add designed, scannable QR codes to any post or page with a shortcode or a block. Static codes that never expire, style presets, gradients and custom shapes.
+Add designed, scannable QR codes with a shortcode or block. Static codes that never expire, with style presets, gradients and custom shapes.
 
 == Description ==
 
@@ -55,7 +55,7 @@ For a full no-code generator with live preview, logo embedding and PNG/JPG/WebP 
 * `bg`, `transparent` - background color, or transparent="1" for none.
 * `ec` - error correction L, M, Q or H.
 * `margin` - quiet zone in modules (default 4).
-* `caption` - 1 (default) shows a small credit under the code, 0 hides it.
+* `caption` - 1 shows a small "Made with DesignYourQR" credit under the code. Off by default.
 * `align` - left, center (default) or right.
 * Type-specific: `ssid`, `pass`, `enc`, `hidden` (wifi); `to`, `subject`, `body` (email); `to`, `msg` (sms); `first`, `last`, `org`, `title`, `phone`, `email`, `url` (vcard).
 
@@ -83,6 +83,10 @@ The code is drawn by the bundled script, so it needs the plugin active on pages 
 2. Different presets and shapes.
 
 == Changelog ==
+
+= 1.1.1 =
+* The "Made with DesignYourQR" credit is now off by default and opt-in (set caption="1" or toggle it on in the block).
+* Clearer plugin description and accurate tags.
 
 = 1.1.0 =
 * Added a block editor block ("QR Code (DesignYourQR)") with controls for content, type, preset, size, shapes and colors. Shares the same engine and output as the shortcode.
