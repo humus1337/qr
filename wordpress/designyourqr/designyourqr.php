@@ -1,7 +1,6 @@
 <?php
 /**
  * Plugin Name:       DesignYourQR - QR Code Generator
- * Plugin URI:        https://designyourqr.com
  * Description:        Add designed, scannable QR codes to any post or page with the [designyourqr] shortcode or the block editor. Static codes that never expire, 9 style presets, gradients and custom shapes. From the team behind designyourqr.com.
  * Version:           1.1.1
  * Requires at least: 5.0
