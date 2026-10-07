@@ -19,6 +19,8 @@ Fully static, no build step, no backend. Codes are generated client-side; nothin
 - `serve.mjs` - tiny dev server (`npm run dev`, port 4173)
 - `test/` - see below
 - `wrangler.toml` - Cloudflare Workers static-assets config with the custom domains
+- `package/` - the renderer published to npm as [`designyourqr`](https://www.npmjs.com/package/designyourqr)
+- `wordpress/designyourqr/` - a WordPress plugin exposing the same renderer as a `[designyourqr]` shortcode and a Gutenberg block
 
 ## SEO and GEO
 
@@ -53,3 +55,7 @@ Add each root domain (for example `designyourqr.com`) as its own site in AdSense
 ## Power user API
 
 The page exposes `window.TitanQR` in the console: `TitanQR.set({dot: 'dots'})`, `TitanQR.svg()`, `TitanQR.applyPreset('sunset')`, `TitanQR.applyLang('he')`, `TitanQR.applyTheme('light')`.
+
+## License
+
+MIT for the site and the `designyourqr` npm package. The WordPress plugin in `wordpress/designyourqr/` is GPL-2.0-or-later, as required by the WordPress.org plugin directory.
