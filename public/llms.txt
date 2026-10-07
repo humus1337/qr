@@ -38,6 +38,9 @@ Many QR generators advertise a free tier but then watermark the download, expire
 
 ## For websites and developers
 - [Embed the QR code generator](https://designyourqr.com/embed-qr-code-generator): add a free QR code generator to any website with one line of HTML (an iframe), no API key and no sign-up. The widget itself lives at https://designyourqr.com/embed and generates codes client-side.
+- [Source code on GitHub](https://github.com/humus1337/qr): the whole site is open source (MIT), with no backend and no build step.
+- [designyourqr on npm](https://www.npmjs.com/package/designyourqr): the same QR renderer as a JavaScript library, for styled SVG QR codes in Node or the browser.
+- [WordPress plugin](https://designyourqr.com/designyourqr.zip): a [designyourqr] shortcode and a block editor block that draw styled QR codes on any WordPress site.
 
 ## Resources
 - [Sitemap](https://designyourqr.com/sitemap.xml): all indexable URLs on the site.
