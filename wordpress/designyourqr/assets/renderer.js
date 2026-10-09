@@ -253,16 +253,31 @@ function eyePupilPath(style, corner, x, y) {
 
 /* ---------- svg assembly ---------- */
 
+/* Ids must be unique per definition: several inline SVGs on one page share a
+   single id namespace, and url(#id) resolves to the first match in the document.
+   Hashing the definition keeps output deterministic; identical defs may share. */
+function defId(prefix, body) {
+  let h = 5381;
+  for (let i = 0; i < body.length; i++) h = ((h << 5) + h + body.charCodeAt(i)) | 0;
+  return prefix + (h >>> 0).toString(36);
+}
+
 function gradientDef(color, x0, y0, n) {
   const stops = '<stop offset="0" stop-color="' + color.c1 + '"/><stop offset="1" stop-color="' + color.c2 + '"/>';
+  let tag, attrs;
   if (color.mode === 'radial') {
-    return '<radialGradient id="fg" gradientUnits="userSpaceOnUse" cx="' + f(x0 + n / 2) + '" cy="' + f(y0 + n / 2) + '" r="' + f(n * 0.68) + '">' + stops + '</radialGradient>';
+    tag = 'radialGradient';
+    attrs = ' gradientUnits="userSpaceOnUse" cx="' + f(x0 + n / 2) + '" cy="' + f(y0 + n / 2) + '" r="' + f(n * 0.68) + '"';
+  } else {
+    const a = ((color.angle % 360) * Math.PI) / 180;
+    const dx = Math.sin(a), dy = -Math.cos(a);
+    const t = ((Math.abs(dx) + Math.abs(dy)) * n) / 2;
+    const cx = x0 + n / 2, cy = y0 + n / 2;
+    tag = 'linearGradient';
+    attrs = ' gradientUnits="userSpaceOnUse" x1="' + f(cx - dx * t) + '" y1="' + f(cy - dy * t) + '" x2="' + f(cx + dx * t) + '" y2="' + f(cy + dy * t) + '"';
   }
-  const a = ((color.angle % 360) * Math.PI) / 180;
-  const dx = Math.sin(a), dy = -Math.cos(a);
-  const t = ((Math.abs(dx) + Math.abs(dy)) * n) / 2;
-  const cx = x0 + n / 2, cy = y0 + n / 2;
-  return '<linearGradient id="fg" gradientUnits="userSpaceOnUse" x1="' + f(cx - dx * t) + '" y1="' + f(cy - dy * t) + '" x2="' + f(cx + dx * t) + '" y2="' + f(cy + dy * t) + '">' + stops + '</linearGradient>';
+  const id = defId('fg', tag + attrs + stops);
+  return { id, def: '<' + tag + ' id="' + id + '"' + attrs + '>' + stops + '</' + tag + '>' };
 }
 
 /* qrlib: the qrcode-generator factory. st: full app state. px: optional pixel width. */
@@ -297,8 +312,9 @@ function renderSVG(qrlib, st, px) {
   if (st.color.mode === 'solid') {
     paint = st.color.c1;
   } else {
-    defs.push(gradientDef(st.color, x0, y0, n));
-    paint = 'url(#fg)';
+    const g = gradientDef(st.color, x0, y0, n);
+    defs.push(g.def);
+    paint = 'url(#' + g.id + ')';
   }
   const eyeFramePaint = st.eye.custom ? st.eye.frame : paint;
   const eyePupilPaint = st.eye.custom ? st.eye.pupil : paint;
@@ -377,8 +393,10 @@ function renderSVG(qrlib, st, px) {
     if (st.logo.backdrop === 'circle') {
       const r = Math.max(logoBox.w, logoBox.h) / 2 + p;
       body.push('<circle cx="' + f(logoBox.cx) + '" cy="' + f(logoBox.cy) + '" r="' + f(r) + '" fill="' + bdFill + '"/>');
-      defs.push('<clipPath id="lclip"><circle cx="' + f(logoBox.cx) + '" cy="' + f(logoBox.cy) + '" r="' + f(Math.max(logoBox.w, logoBox.h) / 2) + '"/></clipPath>');
-      body.push('<image x="' + f(logoBox.x) + '" y="' + f(logoBox.y) + '" width="' + f(logoBox.w) + '" height="' + f(logoBox.h) + '" clip-path="url(#lclip)" preserveAspectRatio="xMidYMid meet" href="' + st.logo.data + '"/>');
+      const clip = '<circle cx="' + f(logoBox.cx) + '" cy="' + f(logoBox.cy) + '" r="' + f(Math.max(logoBox.w, logoBox.h) / 2) + '"/>';
+      const clipId = defId('lclip', clip);
+      defs.push('<clipPath id="' + clipId + '">' + clip + '</clipPath>');
+      body.push('<image x="' + f(logoBox.x) + '" y="' + f(logoBox.y) + '" width="' + f(logoBox.w) + '" height="' + f(logoBox.h) + '" clip-path="url(#' + clipId + ')" preserveAspectRatio="xMidYMid meet" href="' + st.logo.data + '"/>');
       coverPct = (100 * Math.PI * r * r) / (n * n);
     } else {
       if (st.logo.backdrop !== 'none') {

@@ -4,7 +4,7 @@ Tags: qr code, qr, qrcode, qr generator, block
 Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 7.0
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,10 +79,13 @@ The code is drawn by the bundled script, so it needs the plugin active on pages 
 
 == Screenshots ==
 
-1. A QR code rendered by the shortcode with the "ocean" preset.
-2. Different presets and shapes.
+1. Three codes on one page, each with its own preset: a link (ocean), a Wi-Fi network (forest) and a contact card (sunset).
+2. The "QR Code (DesignYourQR)" block in the editor, with content and style settings in the sidebar.
 
 == Changelog ==
+
+= 1.1.2 =
+* Fixed: when a page had several codes with gradient presets, every code showed the colors of the first one.
 
 = 1.1.1 =
 * The "Made with DesignYourQR" credit is now off by default and opt-in (set caption="1" or toggle it on in the block).
