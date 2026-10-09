@@ -20,7 +20,7 @@ Fully static, no build step, no backend. Codes are generated client-side; nothin
 - `test/` - see below
 - `wrangler.toml` - Cloudflare Workers static-assets config with the custom domains
 - `package/` - the renderer published to npm as [`designyourqr`](https://www.npmjs.com/package/designyourqr)
-- `wordpress/designyourqr/` - a WordPress plugin exposing the same renderer as a `[designyourqr]` shortcode and a Gutenberg block
+- `wordpress/designyourqr/` - the [WordPress.org plugin](https://wordpress.org/plugins/designyourqr/), exposing the same renderer as a `[designyourqr]` shortcode and a Gutenberg block
 
 ## SEO and GEO
 
