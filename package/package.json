@@ -1,6 +1,6 @@
 {
   "name": "designyourqr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate designed, scannable QR codes as SVG - custom module and eye shapes, gradients, presets and logo embedding. The open engine behind designyourqr.com.",
   "keywords": [
     "qr",
